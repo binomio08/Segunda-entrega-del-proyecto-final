@@ -1,0 +1,52 @@
+/* --------------Navbar-------------- */
+.navbar {
+    background-color: #F66B0E;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #EFEFEF;
+}
+.navbar .nav-item :hover{
+    background-color: #6d310a !important;
+    padding: 10px;
+}
+/* ------------ End Navbar----------- */
+
+/* ------------Jumbotron--------------- */
+.jumbotron{
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position:  center;
+}
+.jumbotron h1{
+    font-family: 'Berkshire Swash', cursive;
+    text-shadow: 0px 1px 0px #E04D01;
+    text-shadow: 0px 2px 0px #E04D01;
+    text-shadow: 0px 3px 0px #E04D01;
+    text-shadow: 0px 4px 0px #E04D01;
+    text-shadow: 0px 5px 0px #E04D01;
+    text-shadow: 0px 6px 5px #E04D01;
+    animation-duration: 2s;
+    animation-name: disappear;
+    animation-delay: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.nombreColor{
+    text-shadow: 1px 7px 0px #2FA4FF;
+    text-shadow: 1px 7px 5px #2FA4FF;
+}
+@keyframes disappear {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.jumbotron p {
+    color: black;
+    text-shadow: 0px 1px 0px #F66B0E;
+}
+/* ------------ End Jumbotron--------------- */
