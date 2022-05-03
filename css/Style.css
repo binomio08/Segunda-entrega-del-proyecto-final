@@ -77,7 +77,7 @@
 .card h3{
     padding: 1em;
 }
-@iframe{
+iframe{
     max-width: 100%;
     /* height: auto; */
     aspect-ratio: 16/9;
