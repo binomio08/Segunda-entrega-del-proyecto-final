@@ -1,4 +1,4 @@
-/* --------------Navbar-------------- */
+  /* --------------Navbar-------------- */
 .navbar {
     background-color: #F66B0E;
 }
@@ -51,6 +51,211 @@
     text-shadow: 0px 1px 0px #F66B0E;
 }
 /* ------------ End Jumbotron--------------- */
+/*----------------------------------------comienza page aboutme---------------------------------------*/
+
+#aboutMe{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.contentMe img{
+    height: auto;
+    width: 37.5em;
+    max-width: 100%;
+    border-radius: 50%;
+}
+.textMe{
+    width: 500px;
+    max-width: 100%;
+    padding: 100px 10px;
+}
+.contentMe{
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+}
+.textMe h1{
+    color: #ffcc74;
+    font-size: 5.3em;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.textMe h4{
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 25px;
+    text-transform: capitalize
+}
+.textMe p{
+    color: #c0c4d6;
+    font-size: 1.1em;
+    line-height: 28px;
+    margin-bottom: 45px;
+}
+.buttonMe{
+    background-color: #ffcc74;
+    color: black;
+    border: 2px solid transparent;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.buttonMe:hover{
+    transform: scale(1.2);
+    background-color: transparent;
+    border: 2px solid #ffcc74;
+    transition: .4s;
+    cursor: pointer;
+}
+@media screen and (max-width: 1180px) {
+    #aboutMe{
+    width: auto;
+    height: auto;
+    padding: 70px 0px;
+}
+}
+@media screen and (max-width: 650px) {
+    .contentMe img{
+        margin-bottom: 35px;
+    }
+    .textMe h1{
+        font-size: 3.5em;
+        margin-bottom: 25px;
+    }
+}
+
+/*-------------------------------------Comienza page Skills--------------------------------------*/
+#skills .contenedorSkills{
+    min-height: 900px;
+    width: 100%;
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    display: grid;
+    padding: 20px;
+    gap: 10px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    color: #F66B0E;
+}
+
+.contenedorSkills .img, .contenedorSkills h1 {
+    border: 2px solid black;
+    border-radius: 7px;
+}
+.contenedorSkills h1:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+.contenedorSkills .img:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+.img1{
+    background-image: url(../img/react.png);
+    background-size: cover;
+    background-position: center;
+
+}
+.img2{
+    background-image: url(../img/java.png);
+    background-size: cover;
+    background-position: center;
+}
+.img3{
+    background-image: url(../img/css.png);
+    background-size: cover;
+    background-position: center;
+}
+.img4{
+    background-image: url(../img/git.png);
+    background-size: cover;
+    background-position: center;
+}
+.img5{
+    background-image: url(../img/html.png);
+    background-size: cover;
+    background-position: center;
+}
+.img6{
+    background-image: url(../img/bootstrap.png);
+    background-size: cover;
+    background-position: center;
+}
+.audio{
+    text-align: center;
+    background-color: #312f2f;
+}
+@media (min-width:320px) and (max-width:1023px){
+    .contenedorSkills .img{
+        height: 250px;
+    }
+    .contenedorSkills h1{
+        border: none;
+    }
+}
+
+@media (min-width:1024px){
+    .contenedorSkills h1{
+        grid-column: 2/5;
+        grid-row: 1/2;
+        background-image: url(../img/banner.jpg);
+        background-size: cover ;
+        background-position: center;
+        font-size: 3rem;
+    }
+
+    .img1 {
+        grid-column: 1/2;
+        grid-row: 1/3;
+        background-image: url(../img/java.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .img2{
+        grid-column: 2/3;
+        grid-row: 2/4;
+        background-image: url(../img/react.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .img3{
+        grid-column: 4/5;
+        grid-row: 2/4;
+        background-image: url(../img/css.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .img4{
+        grid-column: 1/2;
+        grid-row: 3/5;
+        background-image: url(../img/git.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .img5{
+        grid-column: 3/4;
+        grid-row: 2/4;
+        background-image: url(../img/html.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .img6{
+        grid-column: 2/5;
+        grid-row: 4/5;
+        background-image: url(../img/bootstrap.png);
+        background-size: cover;
+        background-position: center;
+    }
+}
+/* --------------------End Skills------------------------- */
 
 /*-------------------------------------comienza page blog----------------------------------------*/
 #blog{
@@ -72,10 +277,12 @@
     overflow: hidden;
     cursor: default;
     transition: all 400ms ease;
-
 }
 .card h3{
     padding: 1em;
+}
+.card3{
+    margin: 0;
 }
 iframe{
     max-width: 100%;
@@ -190,7 +397,7 @@ iframe{
 /* ----------------------------------------------footer----------------------------------------------- */
 
 footer{
-    height: auto;
+    height: 3.25em;
     width: 100%;
     background-color: #F66B0E;
     font-size: 50px;
