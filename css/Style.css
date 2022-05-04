@@ -59,6 +59,37 @@
     font-weight: bolder;
 }
 /* ------------ End Jumbotron--------------- */
+
+/*----------------------comienzo section aboutMe----------------------------*/
+.sectA h2{
+    background-color: #F66B0E;
+    color: #EFEFEF;
+    text-align: center;
+    font-weight: bolder;
+    margin: 0;
+}
+.nleft{
+    background-image: url(../img/about.png);
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    margin: 0;
+}
+.nright{
+    background: linear-gradient(70deg, #396EB0, white);
+    height: auto;
+    text-align: center;
+}
+.nright h3{
+    color: #EFEFEF;
+    text-shadow: 1px 1px 1px #E04D01;
+}
+.nright p{
+    margin-top: 50px;
+}
+
+
+/*----------------------End section aboutMe---------------------------------*/
 /*----------------------------------------comienza page aboutme---------------------------------------*/
 
 #aboutMe{
@@ -107,23 +138,8 @@
     line-height: 28px;
     margin-bottom: 45px;
 }
-.buttonMe{
-    background-color: #396EB0;
-    color: black;
-    border: 2px solid transparent;
-    text-decoration: none;
-    padding: 10px 30px;
-    border-radius: 30px;
-    font-size: 1.1em;
-    font-weight: bold;
-}
-.buttonMe:hover{
-    transform: scale(1.2);
-    background-color: transparent;
-    border: 2px solid #396EB0;
-    transition: .4s;
-    cursor: pointer;
-}
+
+
 @media screen and (max-width: 1180px) {
     #aboutMe{
     width: auto;
